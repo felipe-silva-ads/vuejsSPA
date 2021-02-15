@@ -70,7 +70,7 @@
 <script>
 
 export default {
-  name: 'BodyVue',
+  name: 'HomeBodyVue',
   data () {
     return {
     }

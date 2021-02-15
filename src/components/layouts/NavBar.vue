@@ -1,13 +1,26 @@
 <template>
 
-<span>
-    <nav>
+<div class="navbar-fixed">
+  <nav>
     <div class="nav-wrapper teal">
-      <a href="#" class="brand-logo center">Meu Curriculo</a>
-      <div class="menu right"><i class="material-icons">menu</i></div>
+      <router-link to="/" class="brand-logo">MyResume</router-link>
+      <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/cadastro">Cadastro</a></li>
+        <li><a href="/">Contato</a></li>
+      </ul>
     </div>
   </nav>
-</span>
+
+  <ul class="sidenav" id="mobile-demo">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/cadastro">Cadastro</a></li>
+        <li><a href="/">Contato</a></li>
+  </ul>
+</div>
 
 </template>
 
@@ -20,12 +33,14 @@ export default {
     }
   }
 }
+
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
+
 </script>
 
 <style>
-
-.menu{
-  margin-right: 20px;
-}
 
 </style>

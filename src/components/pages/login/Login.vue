@@ -1,7 +1,7 @@
 <template>
 <span>
 <nav-bar></nav-bar>
-<home-body-vue></home-body-vue>
+<login-body-vue></login-body-vue>
 <footer-vue></footer-vue>
 </span>
 
@@ -10,10 +10,10 @@
 <script>
 import NavBar from '@/components/layouts/NavBar'
 import FooterVue from '@/components/layouts/FooterVue'
-import HomeBodyVue from '@/components/layouts/HomeBodyVue'
+import LoginBodyVue from '@/components/layouts/LoginBodyVue'
 export default {
-  components: { NavBar, FooterVue, HomeBodyVue },
-  name: 'Home'
+  components: { NavBar, FooterVue, LoginBodyVue },
+  name: 'Login'
 }
 </script>
 
